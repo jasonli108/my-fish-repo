@@ -42,12 +42,8 @@ if status is-interactive
     set -g theme_newline_prompt '$ '
     set -Ux EDITOR nvim
     set -Ux VISUAL nvim
-    set -e -g GEMINI_API_KEY
-
-    
     set -Ux LEETCODE_SESSION ""
     set -Ux CSRF_TOKEN ""
-
 end
 
 # if status is-interactive; and not set -q TMUX
@@ -56,7 +52,7 @@ end
 #   end
 # end
 
-source (/home/linuxbrew/.linuxbrew/bin/brew shellenv | psub)
+# source (/home/linuxbrew/.linuxbrew/bin/brew shellenv | psub)
 bind -e \cv
 fish_add_path /home/yuheng108/.pixi/bin
 set -g fish_function_path $fish_function_path ~/.config/fish/functions
