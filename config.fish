@@ -42,8 +42,10 @@ if status is-interactive
     set -g theme_newline_prompt '$ '
     set -Ux EDITOR nvim
     set -Ux VISUAL nvim
+    set -Ux LEETCODE_USERNAME "jasonli108"
     set -Ux LEETCODE_SESSION ""
     set -Ux CSRF_TOKEN ""
+
 end
 
 # if status is-interactive; and not set -q TMUX
