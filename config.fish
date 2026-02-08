@@ -1,4 +1,10 @@
+set -g fish_function_path $fish_function_path ~/.config/fish/functions
+
 if status is-interactive
+    if not set -q TMUX
+        tmux attach-session -t default; or tmux new-session -s default
+    end
+
     # Commands to run in interactive sessions can go here
     set -g theme_display_git yes
     set -g theme_display_git_dirty yes
@@ -59,4 +65,3 @@ end
 # source (/home/linuxbrew/.linuxbrew/bin/brew shellenv | psub)
 bind -e \cv
 fish_add_path /home/yuheng108/.pixi/bin
-set -g fish_function_path $fish_function_path ~/.config/fish/functions
