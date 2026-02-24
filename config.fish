@@ -48,6 +48,8 @@ if status is-interactive
     set -g theme_newline_prompt '$ '
     set -Ux EDITOR nvim
     set -Ux VISUAL nvim
+    set -Ux SUDO_EDITOR nvim
+
     set -Ux HSA_OVERRIDE_GFX_VERSION 10.3.0
     set -Ux LEETCODE_USERNAME "jasonli108"
 
